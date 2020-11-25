@@ -12,7 +12,7 @@ function _defineProperty(obj, key, value) {if (key in obj) {Object.definePropert
       const then = moment(timeTillDate, timeFormat);
       const now = moment();
       const countdown = moment(then - now);
-      const days = countdown.format('D');
+      const days = countdown.format('0');
       const hours = countdown.format('HH');
       const minutes = countdown.format('mm');
       const seconds = countdown.format('ss');
@@ -74,7 +74,7 @@ function _defineProperty(obj, key, value) {if (key in obj) {Object.definePropert
 
 const SVGCircle = ({ radius }) =>
 React.createElement("svg", { className: "countdown-svg" },
-React.createElement("path", { fill: "none", stroke: "#333", "stroke-width": "4", d: describeArc(50, 50, 48, 0, radius) }));
+React.createElement("path", { fill: "none", stroke: "#FFF", "stroke-width": "4", d: describeArc(50, 50, 48, 0, radius) }));
 
 
 ReactDOM.render(

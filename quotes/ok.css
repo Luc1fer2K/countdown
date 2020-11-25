@@ -1,0 +1,76 @@
+body {
+  background-image: url("pihul.jpg");
+ height:100%;
+ position: relative;
+ opacity: .7;
+ background-size: cover;
+ background-repeat: no-repeat;
+}
+
+.ok{
+  position: absolute;
+  font-family: 'Dancing Script', cursive;
+  font-size: 28px;
+  color:white;
+  top:30%;
+  margin-left:630px;
+  margin-top: 20px;
+  text-align: center;
+}
+.ok2{
+  position: absolute;
+  top:50%;
+  margin-left: 770px;
+  margin-top: 360px;
+
+}
+.btn{
+  background-color: transparent;
+   background-repeat:no-repeat;
+   border: none;
+   cursor:pointer;
+   overflow: hidden;
+   transition: linear 2s;
+}
+.FINAL{
+  display:none;
+}
+.FINAL:hover{
+  width: 120px;
+  height:120px;
+
+}
+#loading{
+  position: fixed;
+  z-index:99999;
+  width:100%;
+  height:100vh;
+  background: #000
+  url('earth.gif') no-repeat center;
+
+}
+.fade-out{
+  animation: fadeOut 6s;
+}
+.fade-in{
+  animation: fadeIn 8s;
+}
+@keyframe fadeOut {
+  from{
+    opacity: 1;
+  }
+to{
+  opacity: 0;
+}
+}
+@keyframes fadeIn {
+  from{
+    opacity: 0;
+  }
+  to{
+    opacity: 1;
+  }
+}
+
+<span class="T1" style='font-size:100px;'>&#9699;</span>
+<span class="T2" style='font-size:100px;'>&#9701;</span>
